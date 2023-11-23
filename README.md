@@ -17,9 +17,10 @@
   - [ ] Queue
   - [ ] BTree
   - [ ] Graph
+- [ ] Build tools
 
 ### Build & Run
 
 ```shell
-gcc main.c lib/lib.c && ./a.out
+gcc main.c lib/lib.c && ./bin.out
 ```
