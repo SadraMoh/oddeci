@@ -1,14 +1,27 @@
 #include <stdio.h>
-#include "lib/lib.h"
+#include "lib/linked_list.h"
 
-int main() {
+int main()
+{
 
-  const int len = 8;
-  int arr[] = { 1,2,3,4,5,6,7,8 };
+  LinkedList *list = ll_create();
 
-  int res = largest(arr, len);
+  ll_push(list, 1);
+  ll_push(list, 2);
+  ll_push(list, 3);
 
-  printf("---> %d\n", res);
+  int *all = ll_collect(list);
+
+  printf("%lu\n", list->length);
+  printf("%d, %d, %d\n", all[0], all[1], all[2]);
+
+  int popped = ll_pop(list); // ---
+
+  all = ll_collect(list);
+
+  printf("%lu\n", list->length);
+  printf("%d, %d\n", all[0], all[1]);
+  printf("%d\n", popped);
 
   return 0;
 }

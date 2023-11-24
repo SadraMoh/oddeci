@@ -22,5 +22,5 @@
 ### Build & Run
 
 ```shell
-gcc main.c lib/lib.c && ./bin.out
+gcc main.c lib/lib.c -o bin.out && ./bin.out
 ```
