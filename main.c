@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "lib/linked_list.h"
 
 int main()
@@ -15,13 +16,13 @@ int main()
   printf("%lu\n", list->length);
   printf("%d, %d, %d\n", all[0], all[1], all[2]);
 
-  int popped = ll_pop(list); // ---
+  int nums[] = {5, 6, 7, 8};
+
+  ll_addRange(list, nums, 4);
 
   all = ll_collect(list);
 
-  printf("%lu\n", list->length);
-  printf("%d, %d\n", all[0], all[1]);
-  printf("%d\n", popped);
+  printf("%d, %d, %d, %d, %d, %d, %d\n", all[0], all[1], all[2], all[3], all[4], all[5], all[6]);
 
   return 0;
 }
