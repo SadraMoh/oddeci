@@ -26,3 +26,8 @@ int main()
 
   return 0;
 }
+
+int hello(char *subject, size_t length)
+{
+  return 1;
+}

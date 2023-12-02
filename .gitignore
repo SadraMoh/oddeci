@@ -1,2 +1,4 @@
 bin.out
 bin.wasm
+
+wasi-sdk
