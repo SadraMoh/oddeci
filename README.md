@@ -35,10 +35,7 @@ Make sure the following tools are installed:
 - clang
 - ninja
 
-Clone the `wasi-sdk` repository
-`git clone https://github.com/WebAssembly/wasi-sdk`
-
-Build the sdk and install
+Download built `wasi-sdk`
 
 ```shell
 cd wasi-sdk
