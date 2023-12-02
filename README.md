@@ -19,7 +19,7 @@
   - [ ] Graph
 - [ ] Build tools
 - [ ] Database connection
-- [ ] WebAssembly/WASI
+- [x] WebAssembly/WASI
 
 ### Build & Run
 
